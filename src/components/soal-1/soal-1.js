@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Card, Button, InputGroup, FormControl } from "react-bootstrap";
+import { Form, Card, Button, InputGroup, FormControl, Container } from "react-bootstrap";
 import logicSoal from "./logicSoal";
 export class SoalSatu extends Component {
   constructor(props) {
@@ -28,27 +28,30 @@ export class SoalSatu extends Component {
   render() {
     return (
       <>
-        <Card>
-          <Card.Body>
-            <Form onSubmit={this.handleOutput}>
-              <InputGroup className="mb-3">
-                <FormControl type="text" value={this.state.nomorKartu} onChange={this.handleChange} placeholder="input" />
+        <Container>
+          <Card className="soalSatu-app">
+            <Card.Body class="soalSatu-comp">
+              <h1>Nomor Terakhir Kartu Kredit</h1>
+              <Form onSubmit={this.handleOutput}>
+                <InputGroup className="mb-3">
+                  <FormControl type="text" value={this.state.nomorKartu} onChange={this.handleChange} placeholder="input" />
 
-                <InputGroup.Append>
-                  <Button type="submit" variant="outline-secondary">
-                    SUBMIT
-                  </Button>
-                </InputGroup.Append>
-              </InputGroup>
+                  <InputGroup.Append>
+                    <Button type="submit" variant="outline-secondary">
+                      SUBMIT
+                    </Button>
+                  </InputGroup.Append>
+                </InputGroup>
 
-              <Form.Group>
-                <Card>
-                  <Card.Body>{this.state.jawaban ? `output: ${this.state.output}` : "output:"}</Card.Body>
-                </Card>
-              </Form.Group>
-            </Form>
-          </Card.Body>
-        </Card>
+                <Form.Group>
+                  <Card>
+                    <Card.Body>{this.state.jawaban ? `output: ${this.state.output}` : "output:"}</Card.Body>
+                  </Card>
+                </Form.Group>
+              </Form>
+            </Card.Body>
+          </Card>
+        </Container>
       </>
     );
   }

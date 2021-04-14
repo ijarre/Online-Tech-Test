@@ -10008,6 +10008,30 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.soalSatu-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60 vw;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.soalSatu-comp h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+#home-satu svg {
+  position: absolute;
+  transform: translate(10px, -170px);
+  fill: white;
+}
+
 .todo-app {
   display: flex;
   flex-direction: column;
@@ -10076,4 +10100,36 @@ svg {
 .completed {
   text-decoration: line-through;
   opacity: 0.4;
+}
+
+.todo-app h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.form {
+  margin-bottom: 15px;
+}
+
+.home svg {
+  fill: white;
+  position: absolute;
+  transform: translate(105px, -20px);
+}
+
+.home-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60 vw;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.logic {
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

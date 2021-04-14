@@ -51,7 +51,10 @@ function TodoApp() {
       {
         <>
           <Container className="todo-app">
-            <FormTodo setInputText={setInputText} todos={todos} setTodos={setTodos} inputText={inputText} setStatus={setStatus} />
+            <h1>What's Your Plan for Today?</h1>
+            <div className="form">
+              <FormTodo setInputText={setInputText} todos={todos} setTodos={setTodos} inputText={inputText} setStatus={setStatus} />
+            </div>
             <TodoListed todos={todos} setTodos={setTodos} filteredTodos={filteredTodos} />
           </Container>
         </>

@@ -1,0 +1,23 @@
+.soalSatu-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60 vw;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.soalSatu-comp h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+#home-satu svg {
+  position: absolute;
+  transform: translate(10px, -170px);
+  fill: white;
+}

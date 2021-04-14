@@ -67,3 +67,18 @@ svg {
   text-decoration: line-through;
   opacity: 0.4;
 }
+
+.todo-app h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.form {
+  margin-bottom: 15px;
+}
+
+.home svg {
+  fill: white;
+  position: absolute;
+  transform: translate(105px, -20px);
+}
