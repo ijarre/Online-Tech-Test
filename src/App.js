@@ -3,7 +3,7 @@ import Home from "./page/home";
 import SoalSatu from "./components/soal-1/soal-1";
 
 import TodoApp from "./components/todo-2-ed/TodoApp";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <>

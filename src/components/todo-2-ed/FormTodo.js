@@ -8,6 +8,10 @@ function FormTodo({ setInputText, setTodos, todos, inputText, setStatus }) {
 
   const submitTodoHandler = (e) => {
     e.preventDefault();
+    if (!inputText || /^\s*$/.test(inputText)) {
+      return;
+    }
+
     setTodos([...todos, { text: inputText, completed: false, id: Math.floor(Math.random() * 10000) }]);
 
     setInputText("");
