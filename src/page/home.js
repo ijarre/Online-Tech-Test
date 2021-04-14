@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import SoalSatu from "../components/soal-1/soal-1";
 
@@ -10,11 +11,15 @@ function Home() {
     <>
       {
         <Container className="home-app">
-          {/* <Row>
+          <h1>Online Test</h1>
+          <Row>
             <Col>
               <Card className="logic">
                 <Card.Body>
-                  <b>SOAL LOGIC 1</b>
+                  <Link to="/soal-satu">
+                    {" "}
+                    <b>SOAL LOGIC 1</b>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -23,14 +28,13 @@ function Home() {
             <Col>
               <Card>
                 <Card.Body>
-                  <b>TO-DO APPS</b>
+                  <Link to="/todo">
+                    <b>TO-DO APPS</b>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
-          </Row> */}
-          <SoalSatu />
-
-          <TodoApp />
+          </Row>
         </Container>
       }
     </>
