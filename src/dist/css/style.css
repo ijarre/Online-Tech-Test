@@ -1,4 +1,11 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10000,4 +10007,73 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60 vw;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(90deg, #ff7614 0%, #ff5411 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.btn-primary {
+  background-color: orange;
+  color: black;
+  font-size: 1em;
+}
+
+.btn-primary:active {
+  background-color: orange;
+  color: black;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+}
+
+.todo-item.card {
+  display: flex;
+}
+
+svg {
+  position: relative;
+  left: 15px;
+}
+
+.todo-item:nth-child(4n+1) {
+  background: #d62828;
+}
+
+.todo-item:nth-child(4n+2) {
+  background: #fca311;
+}
+
+.todo-item:nth-child(4n+3) {
+  background: #e5e5e5;
+}
+
+.todo-item:nth-child(4n+4) {
+  background: #66a182;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */
