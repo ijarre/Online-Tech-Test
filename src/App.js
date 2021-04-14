@@ -8,8 +8,6 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Home /> */}
-
         <Switch>
           <Route path="/soal-satu" exact component={SoalSatu} />
           <Route path="/" exact component={Home} />
