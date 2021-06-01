@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, InputGroup, FormControl, Form, Row, Col, Button } from "react-bootstrap";
+import { InputGroup, FormControl, Form, Row, Col, Button } from "react-bootstrap";
 
 function FormTodo({ setInputText, setTodos, todos, inputText, setStatus }) {
   const inputTextHandler = (e) => {

@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import SoalSatu from "../components/soal-1/soal-1";
-
-import TodoApp from "../components/todo-2-ed/TodoApp";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <>
       {
         <Container className="home-app">
-          <h1>Online Test</h1>
+          <h1>Projects</h1>
           <Row>
             <Col>
               <Card className="logic">
                 <Card.Body>
-                  <Link to="/soal-satu">
+                  <Link to="/lastnumber">
                     {" "}
-                    <b>SOAL LOGIC 1</b>
+                    <b>Guess the last number</b>
                   </Link>
                 </Card.Body>
               </Card>
@@ -29,7 +25,7 @@ function Home() {
               <Card>
                 <Card.Body>
                   <Link to="/todo">
-                    <b>TO-DO APPS</b>
+                    <b>To-do Apps</b>
                   </Link>
                 </Card.Body>
               </Card>

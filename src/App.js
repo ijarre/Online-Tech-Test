@@ -9,7 +9,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/soal-satu" exact component={SoalSatu} />
+          <Route path="/lastnumber" exact component={SoalSatu} />
           <Route path="/" exact component={Home} />
           <Route exact path="/todo" component={TodoApp} />
         </Switch>
